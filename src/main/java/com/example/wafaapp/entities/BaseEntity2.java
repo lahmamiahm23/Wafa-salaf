@@ -19,6 +19,94 @@ import java.time.LocalDate;
 @Getter
 @ToString
 public class BaseEntity2 extends BaseEntity {
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public LocalDate getDob() {
+        return dob;
+    }
+
+    public void setDob(LocalDate dob) {
+        this.dob = dob;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getImagePath() {
+        return imagePath;
+    }
+
+    public void setImagePath(String imagePath) {
+        this.imagePath = imagePath;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    public AadharCard getAadharCard() {
+        return aadharCard;
+    }
+
+    public void setAadharCard(AadharCard aadharCard) {
+        this.aadharCard = aadharCard;
+    }
+
+    public UserRole getRole() {
+        return role;
+    }
+
+    public void setRole(UserRole role) {
+        this.role = role;
+    }
+
+    public String getMobileNumber() {
+        return mobileNumber;
+    }
+
+    public void setMobileNumber(String mobileNumber) {
+        this.mobileNumber = mobileNumber;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     @Column(name = "first-name", length=20)
     private String firstName;
     @Column(name = "last_name" , length = 20)

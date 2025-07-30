@@ -25,7 +25,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Account {
+public class Account extends BaseEntity2{
     @Setter(value = AccessLevel.NONE)
     @ManyToOne
     @JoinColumn(name = "branch_id")
