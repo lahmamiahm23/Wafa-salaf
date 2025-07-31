@@ -1,7 +1,9 @@
 package com.example.wafaapp.repositories;
 
 import com.example.wafaapp.entities.Transaction;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface TransactionDao extends CrudRepository<Transaction, Long> {
+
+public interface TransactionDao extends JpaRepository<Transaction, Long> {
+
 }
