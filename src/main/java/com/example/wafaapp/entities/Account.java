@@ -26,6 +26,86 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Account extends BaseEntity2{
+    public Branch getBranch() {
+        return branch;
+    }
+
+    public void setBranch(Branch branch) {
+        this.branch = branch;
+    }
+
+    public AccountType getAccountType() {
+        return accountType;
+    }
+
+    public void setAccountType(AccountType accountType) {
+        this.accountType = accountType;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    public double getMaxTransactionAmount() {
+        return maxTransactionAmount;
+    }
+
+    public void setMaxTransactionAmount(double maxTransactionAmount) {
+        this.maxTransactionAmount = maxTransactionAmount;
+    }
+
+    public LocalDate getCreationDate() {
+        return creationDate;
+    }
+
+    public void setCreationDate(LocalDate creationDate) {
+        this.creationDate = creationDate;
+    }
+
+    public Status getStatus() {
+        return status;
+    }
+
+    public void setStatus(Status status) {
+        this.status = status;
+    }
+
+    public LocalDate getUpdateDate() {
+        return updateDate;
+    }
+
+    public void setUpdateDate(LocalDate updateDate) {
+        this.updateDate = updateDate;
+    }
+
+    public List<Card> getCards() {
+        return cards;
+    }
+
+    public void setCards(List<Card> cards) {
+        this.cards = cards;
+    }
+
+    public List<Transaction> getDebitTransactions() {
+        return debitTransactions;
+    }
+
+    public void setDebitTransactions(List<Transaction> debitTransactions) {
+        this.debitTransactions = debitTransactions;
+    }
+
+    public List<Transaction> getCreditTransactions() {
+        return creditTransactions;
+    }
+
+    public void setCreditTransactions(List<Transaction> creditTransactions) {
+        this.creditTransactions = creditTransactions;
+    }
+
     @Setter(value = AccessLevel.NONE)
     @ManyToOne
     @JoinColumn(name = "branch_id")
